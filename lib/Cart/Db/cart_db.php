@@ -71,7 +71,6 @@ function update_item(&$cart, $item_id, $new_item) {
 }
 
 
-
 // IO FUNCTIONS
 
 

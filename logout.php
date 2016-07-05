@@ -4,15 +4,16 @@ include 'lib/Cart/View/cart_view.php';
 
 use function Cart\View\display;
 use function Cart\Auth\logout;
+
+logout()
 ?>
-
-<?php logout() ?>
-
-
 
 <!doctype html>
 <html>
-<head><title>Logout</title></head>
+<head>
+    <title>Logout</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
 <body>
 <?= display('links');?>
 <h1>Login</h1>

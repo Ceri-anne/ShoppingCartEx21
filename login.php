@@ -8,19 +8,19 @@ use function Cart\Auth\login;
 ?>
 
 <?php if($_SERVER['REQUEST_METHOD'] == 'POST'): ?>
-    <?php login($users, $_POST['username'], $_POST['password']); ?>
+    <?php login($users,$_POST['username'],$_POST['password']); ?>
 <?php endif; ?>
-
 
 
 <!doctype html>
 <html>
-<head><title>Login</title></head>
+<head><title>Login</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
 <body>
 <?= display('links');?>
 <h1>Login</h1>
 <p>Please log in here:</p>
     <?= display('loginform'); ?>
-
 </body>
 </html>

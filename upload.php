@@ -24,6 +24,7 @@ use function Cart\Auth\require_login;
 <?= display('links');?>
 <h1>Upload</h1>
 <p>You are logged in as <?= $_SESSION['username'] ?></p><br>
+
 <?php echo Cart\View\display('uploadform'); ?>
 
 </body>

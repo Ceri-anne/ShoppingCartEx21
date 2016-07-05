@@ -10,6 +10,6 @@ function display($template, $variables = [], $extension = TEMPLATE_EXTENSION) {
 	extract($variables);
 	
 	ob_start();
-	include TEMPLATE_FOLDER . TEMPLATE_PREFIX . $template . TEMPLATE_EXTENSION;
+	include TEMPLATE_FOLDER . TEMPLATE_PREFIX . $template . $extension;
 	return ob_get_clean();
 }

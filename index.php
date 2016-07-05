@@ -30,8 +30,5 @@ use function Cart\View\display;
 
 
 </body>
-<footer>
-    
-</footer>
 
 </html>

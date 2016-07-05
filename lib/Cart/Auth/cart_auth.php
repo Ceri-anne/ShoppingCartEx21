@@ -7,13 +7,16 @@ session_start();
 
 function login($users, $username, $password) {
 	$user = read_user($users, $username, $password);
-
-	if($user && password_verify($password, $user['password'])) {
+        
+        if (!in_array($user, $users)) {
+            echo "User not recognised. Please try again";
+        }
+	else if($user && password_verify($password, $user['password'])) {
 		$_SESSION['username'] = $username;
                 header('Location: upload.php');
                 exit();
 	} else {
-		echo("Login details not recognised. Please try again");
+		echo "User not recognised. Please try again";
 	}
 }
 
