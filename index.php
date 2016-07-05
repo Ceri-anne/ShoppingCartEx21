@@ -9,7 +9,9 @@ use function Cart\View\display;
 
 <!doctype html>
 <html>
-<head><title>Shopping Cart</title></head>
+<head><title>Shopping Cart</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
 <body>
 <?= display('links');?>
 <h1>Shopping Cart</h1>
