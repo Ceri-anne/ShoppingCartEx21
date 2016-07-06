@@ -15,14 +15,15 @@ require_login();
 
 <!doctype html>
 <html>
-<head><title>Shopping Cart</title>
-     <link rel="icon" type="image/png"  href="img/shopping_cart_grey.png">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
+<head>
+     <title>Shopping Cart</title>
+     <?php  include 'header.php'; ?>
 <body>
-<?= display('links');?>
-<h1>Shopping Cart</h1>
-<p>You are logged in as <?= $_SESSION['username'] ?></p><br>
-<?php echo display('item', $view_vars); ?>
+
+     <?= display('links');?>
+    <h1>Shopping Cart</h1>
+    <p>You are logged in as <?= $_SESSION['username'] ?></p><br>
+    <?php echo display('item', $view_vars); ?>
 
 </body>
 </html>

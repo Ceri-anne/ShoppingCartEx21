@@ -12,13 +12,13 @@ logout()
 <html>
 <head>
     <title>Logout</title>
-     <link rel="icon" type="image/png"  href="img/shopping_cart_grey.png">
-     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <?php  include 'header.php'; ?>
 </head>
 <body>
-<?= display('links');?>
-<h1>Login</h1>
-<p>You have successfully logged out</p>
+    
+    <?= display('links');?>
+    <h1>Login</h1>
+    <p>You have successfully logged out</p>
 
 </body>
 </html>

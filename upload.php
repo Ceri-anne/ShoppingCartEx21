@@ -17,16 +17,17 @@ use function Cart\Auth\require_login;
 
 <!doctype html>
 <html>
-<head><title>Shopping Cart</title>
-     <link rel="icon" type="image/png"  href="img/shopping_cart_grey.png">
-      <link href="css/main.css" rel="stylesheet" type="text/css">
+<head>
+      <title>Shopping Cart</title>
+      <?php  include 'header.php'; ?>
 </head>
 <body>
-<?= display('links');?>
-<h1>Upload</h1>
-<p>You are logged in as <?= $_SESSION['username'] ?></p><br>
+    
+    <?= display('links');?>
+    <h1>Upload</h1>
+    <p>You are logged in as <?= $_SESSION['username'] ?></p><br>
 
-<?php echo Cart\View\display('uploadform'); ?>
+    <?php echo Cart\View\display('uploadform'); ?>
 
 </body>
 </html>

@@ -14,14 +14,16 @@ use function Cart\Auth\login;
 
 <!doctype html>
 <html>
-<head><title>Login</title>
-     <link rel="icon" type="image/png"  href="img/shopping_cart_grey.png">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
+<head>
+    <title>Login</title>
+    <?php  include 'header.php'; ?>
 </head>
 <body>
-<?= display('links');?>
-<h1>Login</h1>
-<p>Please log in here:</p>
+    
+    <?= display('links');?>
+    <h1>Login</h1>
+    <p>Please log in here:</p>
     <?= display('loginform'); ?>
+    
 </body>
 </html>
