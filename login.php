@@ -15,7 +15,7 @@ use function Cart\Auth\login;
 <!doctype html>
 <html>
 <head><title>Login</title>
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <?= display('links');?>

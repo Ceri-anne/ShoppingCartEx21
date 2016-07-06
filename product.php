@@ -16,7 +16,7 @@ require_login();
 <!doctype html>
 <html>
 <head><title>Shopping Cart</title>
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"></head>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
 <body>
 <?= display('links');?>
 <h1>Shopping Cart</h1>
