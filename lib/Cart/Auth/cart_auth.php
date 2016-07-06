@@ -13,7 +13,7 @@ function login($users, $username, $password) {
         }
 	else if($user && password_verify($password, $user['password'])) {
 		$_SESSION['username'] = $username;
-                header('Location: upload.php');
+                header('Location: ' . $_SESSION['redirectURL']);
                 exit();
 	} else {
 		echo "User not recognised. Please try again";
@@ -27,6 +27,7 @@ function logout() {
 
 function require_login() {
  if (!isset($_SESSION['username'])) {
+        $_SESSION['redirectURL'] = $_SERVER['REQUEST_URI'];
         header('Location: login.php');
         exit();
     }
